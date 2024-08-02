@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+.frameSection {
+    font-family: 'Raleway', sans-serif;
+    font-size: medium;
+    color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.frame {
+    background-image: url('../images/token.png');
+    background-size: cover;
+    border-radius: 15px;
+    text-align: center;
+    color: #f8f8f8;
+}
+
+.frame h1 {
+    font-size: 2rem;
+}
+
+.frame p {
+    font-size: 1rem;
+}
+
+.frame button {
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: black;
+    border: none;
+    border-radius: 15px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.frame.desktop {
+    width: 80%;
+    padding: 80px 40px;
+}
+
+
+.frame.tabletOrMobile {
+    width: 90%;
+    padding: 60px 30px;
+}
+
+@media (min-width: 1024px) {
+    .frame h1 {
+        font-size: 3.5rem;
+    }
+
+    .frame p {
+        font-size: 1.25rem;
+    }
+
+    .frame button {
+        font-size: 1rem;
+        padding: 15px 30px;
+    }
+}
+
+@media (max-width: 1023px) {
+    .frame h1 {
+        font-size: 2.5rem;
+    }
+
+    .frame p {
+        font-size: 1.1rem;
+    }
+
+    .frame button {
+        font-size: 0.9rem;
+        padding: 12px 25px;
+    }
+}
+
+@media (max-width: 767px) {
+    .frame.tabletOrMobile {
+        width: 100%;
+        padding: 40px 20px;
+    }
+
+    .frame h1 {
+        font-size: 2rem;
+    }
+
+    .frame p {
+        font-size: 1rem;
+    }
+
+    .frame button {
+        font-size: 0.8rem;
+        padding: 10px 20px;
+    }
+}

@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+.footer {
+    background-color: #f8f8f8;
+    color: #0e1218;
+    text-align: left;
+    font-family: 'Raleway', sans-serif;
+    margin-right: 5rem;
+    margin-left: 5rem;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.footer-logo img {
+    width: 50px;
+    height: auto;
+    left: 0;
+}
+
+.footer-line {
+    border: 0.5px solid rgb(150, 152, 158);
+    width: 100%;
+}
+
+.title-and-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-content h1 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+}
+
+.footer-links li {
+    margin: 0 1rem;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: rgb(17, 17, 17);
+}
+
+@media (min-width: 768px) {
+    .title-and-links {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+    }
+
+    .footer-content h1 {
+        font-size: 28px;
+    }
+}
+
+
+@media (min-width: 1024px) {
+    .footer-content h1 {
+        font-size: 32px;
+    }
+}
